@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -82,19 +83,21 @@ ul.breadcrumb li:last-child a {
 }
 
 /* slider */
-.slider {
-  @apply flex my-4 flex-col;
-}
 
-.slider .thumbnail {
-  @apply w-screen order-last -mx-2 overflow-auto flex pl-4;
-}
+  .slider {
+    @apply flex my-4 flex-col;
+  }
 
-.slider .thumbnail .item {
-  @apply rounded relative lg:rounded mb-4 cursor-pointer;
-  width: 106px;
-  height: 106px;
-}
+  .slider .thumbnail {
+    @apply w-screen order-last -mx-2 overflow-auto flex pl-4;
+  }
+
+  .slider .thumbnail .item {
+    @apply rounded relative lg:rounded mb-4 cursor-pointer;
+    width: 106px;
+    height: 106px;
+  }
+
 
 .slider .thumbnail .item:after {
   content: "";
@@ -138,6 +141,6 @@ button[disabled] {
   @apply bg-gray-300 hover:bg-gray-300 text-gray-400 hover:text-gray-400 cursor-not-allowed;
 }
 
-section:not(.bg-gray-100)+section.sitemap>div {
-  @apply border-t;
+section:not(.bg-gray-100) + section.sitemap>div {
+  @apply border-t
 }

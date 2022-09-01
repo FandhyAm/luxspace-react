@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 export default function PageErrorMassage({
   title = "404 NOT FOUND",
   body = "Looks like this page not found",
-}) {
+}) 
+{
   return (
     <section className="mt-28">
       <div className="container mx-auto min-h-screen">

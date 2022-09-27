@@ -62,7 +62,6 @@ export default function BrowseRoom() {
     run(fetch({ url: "/api/categories/?page=1&limit=4" }));
   }, [run]);
 
-  console.log(data, status, error);
   // For Ratio Design
   const ratioClassNames = {
     wrapper: {
